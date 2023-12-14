@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>Maxplay Administrativo</title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.ico" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/forma.css" />
+    <link rel="stylesheet" type="text/css" href="/js/toastr/toastr.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/toastr/toastr.min.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9WJD1B5FKQ"></script>
+
+</head>
+
+<body>
+    <section class="login " id="gradient">
+
+        <div class="login_box ">
+        
+
+            <div class="contact ">
+                
+                <form action="/login/" method="post" class="formulario" id="formulario">
+                    <input type="hidden" name="csrfmiddlewaretoken"
+                        value="kTV7EgIqhDNP3t2Mys2RReWQ3KaYZpaAgxvIxVaQ6z1JHvfBhekz8YxphjTxznzt">
+                    <img class="logo" src="/logofull.png" />
+                    <h3>Bienvenidos</h3>
+
+                    <!--licencia-->
+
+                    <div class="formulario__grupo" id="grupo__licencia">
+                        <div class="formulario__grupo-input">
+                            <!--<input type="text " placeholder="Licencia " name="licencia" id="licencia" maxlength="10">-->
+                            <input type="text" name="licencia" value="4082015" id="licencia" placeholder="Licencia"
+                                maxlength="10" minlength="6" required>
+                            <i class="formulario__validacion-estado fa fa-times-circle"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="switch__container" >
+                        <label class="switch">
+                            <!--<input type="checkbox" id="id_savek">-->
+                            <input type="checkbox" name="savek" id="id_savek" checked>
+                            <span class="slider round"></span>
+                        </label> <label class="switch__label">Recordar Licencia</label>
+                    </div>
+
+
+                    <!--usuario-->
+                    <div class="formulario__grupo" id="grupo__usuario">
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="usuario" id="usuario" placeholder="Usuario" maxlength="10"
+                                required>
+                            <i class="formulario__validacion-estado fa fa-times-circle"></i>
+                        </div>
+
+                    </div>
+
+                    <!--clave-->
+                    <div class="formulario__grupo" id="grupo__clave">
+                        <div class="formulario__grupo-input">
+                            <input type="password" name="clave" id="clave" placeholder="Clave" required>
+                            <i class="formulario__validacion-estado fa fa-times-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class=" recuperar__data">
+                        <a href=""> <i class="fa fa-lock"></i>Olvide contraseña</a>
+                        <a href=""> <i class="fa fa-user"></i>Desbloquear usuario</a>
+                    </div>
+
+                    <button type="submit" class="btn-grad submit">Ingresar <i class="fa fa-arrow-right"></i></button>
+                </form>
+                <div class="version ">
+                    <span>
+                        CONALOT 03-PI-000011-2021
+                    </span>
+                    <span><b>Versión 4.46</b></span>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="mobile-inductor ">
+            <a href="https://maxplaygo.com/download/app/turbogt_setup.exe" class="icon-btn "><i
+                    class="icon-display"></i><label>Taquilla PC </label></a>
+            <a href="https://maxplaygo.com/download/apk/mpmovil.apk" class="icon-btn "><i
+                    class="icon-mobile"></i><label>Taquilla Movil </label></a>
+        </div>
+    </section>
+
+    <script src="/js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2ccaf8dc11.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
